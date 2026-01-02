@@ -330,7 +330,7 @@ export default function HomePage() {
                 </h2>
                 <p className="text-lg text-neutral-300 leading-relaxed mb-6">
                   Moje ime je Duje. Vjerujem da fitness ne smije biti još jedna obaveza koja ti stvara stres.
-                  Moj pristup je jednostavan: **teški treninzi, pametna prehrana i održiv životni stil.**
+                  Moj pristup je jednostavan: <strong className="text-white">teški treninzi, pametna prehrana i održiv životni stil.</strong>
                 </p>
 
                 <Link

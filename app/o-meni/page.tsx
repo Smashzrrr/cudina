@@ -54,7 +54,7 @@ export default function AboutPage() {
                             Fitness industrija je puna laži. Čarobne pilule, 5-minutni treninzi za trbušnjake i dijete izgladnjivanjem. Ja ne vjerujem u to.
                         </p>
                         <p className="text-lg text-neutral-400 leading-relaxed mb-6">
-                            Vjerujem u **konzistentnost**. Vjerujem u **težak rad**. I vjerujem da svatko, uz pravi plan i podršku, može transformirati svoje tijelo i um.
+                            Vjerujem u <strong className="text-white">konzistentnost</strong>. Vjerujem u <strong className="text-white">težak rad</strong>. I vjerujem da svatko, uz pravi plan i podršku, može transformirati svoje tijelo i um.
                         </p>
                         <p className="text-lg text-neutral-400 leading-relaxed">
                             Kroz proteklih 5 godina radio sam s preko 100 klijenata. Od potpunih početnika do naprednih vježbača. Svima je zajedničko jedno: oni koji su odustali od izgovora, postigli su rezultate.
