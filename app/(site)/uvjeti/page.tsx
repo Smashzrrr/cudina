@@ -12,7 +12,7 @@ export default function TermsPage() {
                             <p><strong className="text-white">CudinaFitness</strong></p>
                             <p>ul. Ivana Meštrovića 30, 23210 Pakoštane, Hrvatska</p>
                             <p>OIB: [UPISATI OIB]</p>
-                            <p>E-mail: dujecudina@gmail.com</p>
+                            <p>E-mail: cudinafitness@gmail.com</p>
                             <p>Datum stupanja na snagu: [UPISATI DATUM]</p>
                         </div>
 

@@ -12,7 +12,7 @@ export default function PrivacyPage() {
                             <p><strong className="text-white">CudinaFitness</strong></p>
                             <p>ul. Ivana Meštrovića 30, 23210 Pakoštane, Hrvatska</p>
                             <p>OIB: [UPISATI OIB]</p>
-                            <p>E-mail: dujecudina@gmail.com</p>
+                            <p>E-mail: cudinafitness@gmail.com</p>
                             <p>Datum stupanja na snagu: [UPISATI DATUM]</p>
                         </div>
 
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
                                     <li><strong className="text-white">Vlasnik:</strong> Duje Čudina</li>
                                     <li><strong className="text-white">Adresa:</strong> ul. Ivana Meštrovića 30, 23210 Pakoštane, Hrvatska</li>
                                     <li><strong className="text-white">OIB:</strong> [UPISATI OIB]</li>
-                                    <li><strong className="text-white">E-mail za pitanja o privatnosti:</strong> dujecudina@gmail.com</li>
+                                    <li><strong className="text-white">E-mail za pitanja o privatnosti:</strong> cudinafitness@gmail.com</li>
                                 </ul>
                             </section>
 
@@ -118,7 +118,7 @@ export default function PrivacyPage() {
                                     <li className="bg-surface p-4 rounded-sm border border-white/5"><strong className="text-white block mb-1">Pravo prigovora</strong> prigovoriti obradi koja se temelji na legitimnom interesu</li>
                                     <li className="bg-surface p-4 rounded-sm border border-white/5"><strong className="text-white block mb-1">Pravo povlačenja</strong> povući danu suglasnost u bilo kojem trenutku</li>
                                 </ul>
-                                <p className="mt-6 text-neutral-400">Za ostvarivanje svojih prava kontaktirajte nas na: <a href="mailto:dujecudina@gmail.com" className="text-accent hover:underline">dujecudina@gmail.com</a>. Na vaš zahtjev odgovorit ćemo u roku od 30 dana.</p>
+                                <p className="mt-6 text-neutral-400">Za ostvarivanje svojih prava kontaktirajte nas na: <a href="mailto:cudinafitness@gmail.com" className="text-accent hover:underline">cudinafitness@gmail.com</a>. Na vaš zahtjev odgovorit ćemo u roku od 30 dana.</p>
                             </section>
 
                             <section>
@@ -155,7 +155,7 @@ export default function PrivacyPage() {
                                 <h2 className="text-2xl font-bold text-accent mb-4">14. KONTAKT</h2>
                                 <p className="mb-4">Za sva pitanja vezana uz zaštitu vaših osobnih podataka obratite se na:</p>
                                 <div className="bg-neutral-900 p-6 rounded-sm">
-                                    <p className="mb-1"><span className="text-neutral-500 w-20 inline-block">E-mail:</span> <a href="mailto:dujecudina@gmail.com" className="text-white hover:text-accent">dujecudina@gmail.com</a></p>
+                                    <p className="mb-1"><span className="text-neutral-500 w-20 inline-block">E-mail:</span> <a href="mailto:cudinafitness@gmail.com" className="text-white hover:text-accent">cudinafitness@gmail.com</a></p>
                                     <p><span className="text-neutral-500 w-20 inline-block">Adresa:</span> <span className="text-white">ul. Ivana Meštrovića 30, 23210 Pakoštane</span></p>
                                 </div>
                             </section>
