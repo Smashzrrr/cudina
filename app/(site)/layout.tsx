@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Header } from "@/components/Header";
 import { BackgroundOrbs } from "@/components/BackgroundOrbs";
+import { CookieConsent } from "@/components/CookieConsent";
 
 const WHATSAPP_LINK =
     "https://wa.me/385992013971?text=Bok%20Duje%2C%20zanima%20me%20trening%20u%20Cudina%20Fitnessu.";
@@ -17,6 +18,8 @@ export default function SiteLayout({
             <Header />
 
             {children}
+
+            <CookieConsent />
 
             <footer className="border-t border-white/5 bg-surface py-16">
                 <div className="mx-auto max-w-7xl px-6">
