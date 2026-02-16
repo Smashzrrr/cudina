@@ -18,7 +18,7 @@ export default function C24GymPage() {
                                 C24 <span className="text-accent">GYM</span>
                             </h1>
                             <p className="mt-8 mx-auto max-w-2xl text-xl text-neutral-400 leading-relaxed">
-                                Uskoro otvaramo vrata najmodernijeg centra u regiji. Oprema vrhunske kvalitete, 24/7 pristup i atmosfera koja te tjera da radiš jače.
+                                Oprema vrhunske kvalitete, 24/7 pristup i atmosfera koja te tjera da radiš jače.
                             </p>
                         </div>
                     </Reveal>

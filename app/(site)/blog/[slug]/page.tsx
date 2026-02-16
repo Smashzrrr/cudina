@@ -49,10 +49,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
                     {/* Hero Image */}
                     <div className="relative w-full aspect-video mb-12 bg-surface rounded-sm overflow-hidden border border-white/5">
-                        {/* Placeholder Image - In real app, this would be dynamic */}
-                        <div className="absolute inset-0 flex items-center justify-center bg-neutral-900 text-neutral-700 font-bold uppercase tracking-widest text-2xl">
-                            Blog Hero Image
-                        </div>
+                        <Image
+                            src={post.image || "/logo.png"}
+                            alt={post.title}
+                            fill
+                            className="object-cover transition-transform duration-700 hover:scale-105"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 800px"
+                            priority
+                        />
                     </div>
 
                     {/* Content */}

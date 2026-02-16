@@ -37,7 +37,7 @@ export default function HomePage() {
       <div id="top" className="absolute top-0 -z-10 h-0 w-0" />
       <Hero />
       <BenefitsSection />
-      <ResultsSection />
+      {/* <ResultsSection /> */}
       <AboutSection />
       <FAQSection />
       <PackagesSection />
