@@ -59,10 +59,10 @@ export default function SiteLayout({
 
                         <div className="text-neutral-500 text-sm flex flex-col md:items-end gap-1">
                             <div className="flex gap-4 mb-2">
-                                <a href="https://www.instagram.com/cudina_fitness/" target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-colors" title="@cudina_fitness">
+                                <a href="https://www.instagram.com/_u/cudina_fitness/" target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-colors" title="@cudina_fitness">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                                 </a>
-                                <a href="https://www.instagram.com/c24gym/" target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-colors" title="@c24gym">
+                                <a href="https://www.instagram.com/_u/c24gym/" target="_blank" rel="noreferrer" className="text-neutral-500 hover:text-white transition-colors" title="@c24gym">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                                 </a>
                             </div>
