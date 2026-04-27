@@ -75,8 +75,11 @@ export default function SiteLayout({
                         </div>
                     </div>
 
-                    <div className="mt-8 text-center text-xs text-neutral-700">
-                        © {new Date().getFullYear()} Cudina Fitness.
+                    <div className="mt-8 flex flex-col items-center justify-between text-xs text-neutral-700 sm:flex-row">
+                        <span>© {new Date().getFullYear()} c24gym.com</span>
+                        <a href="https://fraviz.com" target="_blank" rel="noreferrer" className="mt-2 hover:text-white transition-colors sm:mt-0">
+                            fraviz.com
+                        </a>
                     </div>
                 </div>
             </footer>
