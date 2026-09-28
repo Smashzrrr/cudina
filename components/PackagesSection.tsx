@@ -5,6 +5,12 @@ import { Reveal } from "@/components/Reveal";
 
 type PackageId = "group" | "mini" | "semi" | "individual";
 
+// Referentni datum dodatne (sidrene) cijene za usluge prvi put obuhvaćene Odlukom
+// (Odluka o obveznom isticanju dodatne cijene, NN 101/2026, primjena od 1.10.2026.).
+// Ministarstvo gospodarstva preporučuje uz cijenu navesti samo datum, bez naziva
+// "sidrena"/"dodatna" cijena. Cijene nisu mijenjane od otvorenja, pa su iznosi jednaki.
+const ANCHOR_DATE_LABEL = "10.9.2026.";
+
 const PACKAGES: Array<{
     id: PackageId;
     title: string;
@@ -14,6 +20,7 @@ const PACKAGES: Array<{
     badge?: string;
     priceLabel: string;
     priceSub?: string;
+    anchorPrice: string;
     included: string[];
     forWho: string;
 }> = [
@@ -24,6 +31,7 @@ const PACKAGES: Array<{
             bullets: ["100% fokus", "Korekcija tehnike", "Plan treninga"],
             priceLabel: "240 €",
             priceSub: "20 € / trening",
+            anchorPrice: "240 €",
             included: [
                 "3x tjedno (12 treninga mjesečno)",
                 "Individualni plan treninga",
@@ -43,6 +51,7 @@ const PACKAGES: Array<{
             badge: "Best Value",
             priceLabel: "180 €",
             priceSub: "15 € / trening",
+            anchorPrice: "180 €",
             included: [
                 "3x tjedno (12 treninga mjesečno)",
                 "15 € po treningu",
@@ -59,6 +68,7 @@ const PACKAGES: Array<{
             bullets: ["Mala grupa", "Visoka motivacija", "Kvalitetan nadzor"],
             priceLabel: "120 €",
             priceSub: "10 € / trening",
+            anchorPrice: "120 €",
             included: [
                 "3x tjedno (12 treninga mjesečno)",
                 "10 € po treningu",
@@ -75,6 +85,7 @@ const PACKAGES: Array<{
             bullets: ["Motivirajuća grupa", "Kondicijski trening", "Povoljna cijena"],
             priceLabel: "80 €",
             priceSub: "mjesečna članarina",
+            anchorPrice: "80 €",
             included: [
                 "3 treninga tjedno",
                 "Funkcionalni i kondicijski trening",
@@ -130,6 +141,11 @@ export function PackagesSection() {
                             Svi treninzi ugovaraju se u mjesečnim paketima i plaćaju unaprijed.
                         </p>
                     </div>
+                    <p className="mt-4 max-w-3xl mx-auto text-[11px] text-neutral-500 leading-relaxed">
+                        Sukladno Odluci o obveznom isticanju dodatne cijene, uz svaku cijenu istaknuta je i cijena koja je
+                        za istu uslugu vrijedila na dan {ANCHOR_DATE_LABEL}. Cijene treninga nisu mijenjane od osnutka Cudina
+                        Fitnessa, stoga su iznosi jednaki.
+                    </p>
                 </Reveal>
 
                 <Reveal>
@@ -172,6 +188,9 @@ export function PackagesSection() {
                                         {p.priceSub && (
                                             <p className="text-xs text-neutral-400 mt-1">{p.priceSub}</p>
                                         )}
+                                        <p className="text-[11px] text-neutral-500 mt-2 pt-2 border-t border-white/5">
+                                            Cijena na {ANCHOR_DATE_LABEL}: <span className="text-neutral-300 font-bold">{p.anchorPrice}</span>
+                                        </p>
                                     </div>
 
                                     <ul className={["mt-6 space-y-3 text-xs flex-grow", isFeatured ? "text-white" : "text-neutral-300"].join(" ")}>
@@ -240,6 +259,9 @@ export function PackagesSection() {
                                     {selectedPackage.priceSub && (
                                         <p className="text-neutral-400 text-sm mt-1">{selectedPackage.priceSub}</p>
                                     )}
+                                    <p className="text-xs text-neutral-500 mt-2">
+                                        Cijena na {ANCHOR_DATE_LABEL}: <span className="text-neutral-300 font-bold">{selectedPackage.anchorPrice}</span>
+                                    </p>
                                 </div>
                             </div>
 
