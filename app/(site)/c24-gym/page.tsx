@@ -1,6 +1,10 @@
 import { Reveal } from "@/components/Reveal";
 import { GymRules } from "@/components/GymRules";
 
+// Referentni datum dodatne cijene (Odluka o obveznom isticanju dodatne cijene,
+// NN 101/2026, primjena od 1.10.2026.) — cijene nisu mijenjane od otvorenja.
+const ANCHOR_DATE_LABEL = "10.9.2026.";
+
 export default function C24GymPage() {
     return (
         <main className="min-h-screen bg-neutral-950 pt-24 pb-12 overflow-hidden">
@@ -57,9 +61,12 @@ export default function C24GymPage() {
                                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="text-accent"><rect width="20" height="14" x="2" y="5" rx="2" /><line x1="2" x2="22" y1="10" y2="10" /></svg>
                                 </div>
                                 <h3 className="text-xl font-bold uppercase text-neutral-400 mb-2">Mjesečna članarina</h3>
-                                <div className="text-5xl font-black text-white mb-6 tracking-tighter">
+                                <div className="text-5xl font-black text-white tracking-tighter">
                                     50<span className="text-2xl align-top text-accent">€</span>
                                 </div>
+                                <p className="text-xs text-neutral-500 mb-6">
+                                    Cijena na {ANCHOR_DATE_LABEL}: <span className="text-neutral-300 font-bold">50 €</span>
+                                </p>
                                 <ul className="text-neutral-300 space-y-3 mb-8 text-sm">
                                     <li className="flex items-center gap-2 justify-center">
                                         <span className="w-1.5 h-1.5 rounded-full bg-accent" />
@@ -79,9 +86,12 @@ export default function C24GymPage() {
                                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="text-accent"><path d="M12 2v20" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
                                 </div>
                                 <h3 className="text-xl font-bold uppercase text-neutral-400 mb-2">Dnevni trening</h3>
-                                <div className="text-5xl font-black text-white mb-6 tracking-tighter">
+                                <div className="text-5xl font-black text-white tracking-tighter">
                                     7<span className="text-2xl align-top text-accent">€</span>
                                 </div>
+                                <p className="text-xs text-neutral-500 mb-6">
+                                    Cijena na {ANCHOR_DATE_LABEL}: <span className="text-neutral-300 font-bold">7 €</span>
+                                </p>
                                 <ul className="text-neutral-300 space-y-3 mb-8 text-sm">
                                     <li className="flex items-center gap-2 justify-center">
                                         <span className="w-1.5 h-1.5 rounded-full bg-accent" />
