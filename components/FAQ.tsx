@@ -1,5 +1,4 @@
 'use client';
-import Link from "next/link";
 import { useState } from "react";
 import { Reveal } from "@/components/Reveal";
 
@@ -35,17 +34,7 @@ export function FAQSection() {
     const FAQs: { q: string; a: React.ReactNode }[] = [
         {
             q: "Kako mogu rezervirati svoje mjesto na grupnim treninzima?",
-            a: (
-                <div className="flex flex-col gap-4 items-start">
-                    <p>Rezerviraj sada svoj trening, otvori kalendar i pogledaj termine.</p>
-                    <Link
-                        href="/kalendar"
-                        className="bg-accent text-white px-5 py-2 rounded-sm text-xs font-bold uppercase tracking-wider hover:bg-accent-hover transition-colors shadow-[0_0_15px_-3px_var(--color-accent)]"
-                    >
-                        Kalendar
-                    </Link>
-                </div>
-            )
+            a: "Javi se direktno putem WhatsAppa ili kontakt forme za provjeru slobodnih termina i rezervaciju mjesta."
         },
         { q: "Moram li izabrati jedan program?", a: "Možeš kombinirati programe u dogovoru s trenerom, ovisno o tvojim ciljevima." },
         { q: "Mogu li otkazati trening?", a: "Trening se može otkazati najkasnije 24h ranije. U suprotnom se termin računa kao iskorišten." },
